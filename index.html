@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<style>
+    .myDiv{
+        width: 160px;
+        height: 25px;
+        border-radius: 7px;
+        border-color:lightcyan;
+        background-color:rgb(250, 230, 238);
+    }
+</style>
+<body>
+    <div style="width: 78%;">
+    <form style="border: 1px;border-radius: 7%; width: 28%; height: 450px; background: rgb(255, 245, 240);">
+        <h1 style="text-align:center; color: rgb(100, 223, 237);">Sign Up</h1>
+         <div style="margin-top: 5%; margin-left: 25%;">
+        <div style="display: inline; position: relative;">
+        <input class="myDiv" type="text" required placeholder="Enter your Firstname" maxlength="16" style="background-color:cornsilk;">
+        <br><br>
+        <input class="myDiv" type="text" required placeholder="Enter your Lastname" maxlength="16" style="background-color:cornsilk;">
+        </div>
+        <br><br>
+        <input class="myDiv" type="password" required placeholder="Enter your password" minlength="8" maxlength="16" style="background-color:cornsilk;">
+        <br><br>
+        <input class="myDiv" type="mail" required placeholder="Enter your email" style="background-color:cornsilk;">
+        <br><br>
+        <label>Birthdate:</label>
+        <input class="myDiv" type="date" value="2023-02-19" style="background-color:cornsilk;">
+        <br><br>
+        <label for="countries">Choose country:</label>
+        <select style="height: 35px;border-radius: 30px; border-color: rgb(240, 252, 255); background-color: cornsilk;">
+            <optgroup label="Azerbaijan"></optgroup>
+            <option value="">Baku</option>
+            <option value="">Sumgayit</option>
+            <option value="">Shamaxi</option>
+            <option value="">Guba</option>
+            <optgroup label="Turkey"></optgroup>
+            <option value="">Istanbul</option>
+            <option value="">Adana</option>
+            <option value="">Ankara</option>
+            <option value="">Trabzon</option>
+            <optgroup label="Russia"></optgroup>
+            <option value="">Moscow</option>
+            <option value="">Saint Petersburg</option>
+            <option value="">Samara</option>
+        </select>
+        <br><br>
+        <label>Male:</label>
+        <input type="radio" name="gender" value="Male">
+        <label>Female:</label>
+        <input type="radio" name="gender" value="Female">
+    </form>
+    <br><br>
+   <button type="submit">Continue</button>
+</div>
+    
+</body>
+</html>
